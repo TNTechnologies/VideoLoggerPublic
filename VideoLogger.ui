@@ -14,12 +14,12 @@
    <string>Video Logger</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="record">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>750</y>
-      <width>100</width>
+      <width>231</width>
       <height>27</height>
      </rect>
     </property>
@@ -30,20 +30,7 @@
      <string>R</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>750</y>
-      <width>100</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Stop</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="screenShot">
     <property name="geometry">
      <rect>
       <x>260</x>
@@ -65,7 +52,7 @@
      <string>Space</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="statusLabel">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -78,7 +65,7 @@
      <string>Status: Recording</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="timeLable">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -91,7 +78,7 @@
      <string>HH:MM:SS  -  400Mb</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="videoLabel">
     <property name="geometry">
      <rect>
       <x>10</x>
