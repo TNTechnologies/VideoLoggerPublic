@@ -24,8 +24,8 @@ from ui_main_window import *
 class MainWindow(QWidget):
     # class constructor
     def __init__(self):
-        super().__init__()
-        self.ui = Ui_MainWindow()
+        super(MainWindow, self).__init__()
+       # self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
         # create a timer to
@@ -63,11 +63,10 @@ class MainWindow(QWidget):
             self.cap.release()
 
 if __name__ == '__main__':
-    app =  QApplication(sys.argv)
-
-    # create and show main window
-    mainWindow = MainWindow()
-    mainWindow.show()
-
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
     sys.exit(app.exec_())
 

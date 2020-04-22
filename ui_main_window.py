@@ -12,6 +12,10 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
+        """
+
+        :type MainWindow: object
+        """
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1305, 949)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
@@ -33,7 +37,7 @@ class Ui_MainWindow(object):
         self.videoLabel.setGeometry(QtCore.QRect(10, 10, 1280, 720))
         self.videoLabel.setScaledContents(True)
         self.videoLabel.setObjectName("videoLabel")
-        MainWindow.setCentralWidget(self.centralwidget)
+       # MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1305, 24))
         self.menubar.setObjectName("menubar")
